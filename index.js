@@ -111,17 +111,17 @@ function filterUnfundedOnly() {
     addGamesToPage(unmetGames);
 }
 
-function filterbyGameName(name) {
-    deleteChildElements(gamesContainer);
+// function filterbyGameName(name) {
+//     deleteChildElements(gamesContainer);
 
-    // use filter() to get a list of games that have not yet met their goal
-    let matchingGames = GAMES_JSON.filter( (games) => {
-        return games["name"].toLowerCase().includes(name.toLowerCase());
-    })
+//     // use filter() to get a list of games that have not yet met their goal
+//     let matchingGames = GAMES_JSON.filter( (games) => {
+//         return games["name"].toLowerCase().includes(name.toLowerCase());
+//     })
 
-    // use the function we previously created to add the unfunded games to the DOM
-    addGamesToPage(matchingGames);
-}
+//     // use the function we previously created to add the unfunded games to the DOM
+//     addGamesToPage(matchingGames);
+// }
 
 // show only games that are fully funded
 function filterFundedOnly() {
@@ -157,12 +157,12 @@ unfundedBtn.addEventListener("click", filterUnfundedOnly);
 fundedBtn.addEventListener("click", filterFundedOnly);
 allBtn.addEventListener("click", showAllGames);
 
-document.getElementById('search').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
+// document.getElementById('search').addEventListener('submit', function(event) {
+//     event.preventDefault(); // Prevent the form from submitting normally
     
-    const searchQuery = document.getElementById('search-input').value.toLowerCase();
-    filterbyGameName(searchQuery);
-});
+//     const searchQuery = document.getElementById('search-input').value.toLowerCase();
+//     filterbyGameName(searchQuery);
+// });
 
 
 /*************************************************************************************
