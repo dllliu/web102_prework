@@ -79,3 +79,53 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar li a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+  }
+  
+  .navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar ul li {
+    float: left;
+  }
+  
+  .navbar ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+  }
